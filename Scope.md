@@ -1,13 +1,15 @@
 Here's a low-level design for a login system that uses OTP:
 
 - User enters their username and requests to log in.
+    - Mobile and email address can be used as username
 - Server generates an OTP and sends it to the user's registered phone number or email address.
+    - The OTP generated shall be of 6 digits
 - User enters the OTP and sends it to the server.
 - Server validates the OTP and creates a session for the user.
 - User is logged in and can access their account.
 - Here's a more detailed breakdown of the components involved:
 
-**User Interface:** This is the interface that the user interacts with, where they enter their username and OTP. This could be a web page, a mobile app, or a desktop application.
+**User Interface:** This is the interface that the user interacts with, where they enter their mobile number/email address and OTP. 
 
 **Authentication Server:** This is the server that generates and verifies OTPs. It receives login requests from the user interface and generates OTPs to send to the user's phone or email address. It also receives OTPs from the user and validates them.
 
